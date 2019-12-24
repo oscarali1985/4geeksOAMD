@@ -1,11 +1,14 @@
-/* OAMD*/
+/* width:  height:
+   cancho: alto: */
 
 body {
     background-color: black;
-    font-family: "Lobster",sans-serif;;
+    font-family: "Lobster",sans-serif;
 }
 table {
     background-color: white;
+    width: 35%;
+	height: 250px;
 }
 #tbody {
     display: table-row-group;
@@ -28,4 +31,10 @@ th {
     vertical-align: inherit;
     font-weight: bold;
     text-align: -internal-center;
+}
+
+button{
+    font-size: 18px;
+    background-color:#c0c0c0;
+    font-family: "Lobster",sans-serif
 }
