@@ -1,23 +1,48 @@
 /* Este es un
    comentario CSS de varias
-   lineas */
+   lineas
+*/
 
+body{background: #BDBDBD;
+  margin:0;
+}
+div{
+  box-sizing: border-box;
+}
 
-   .flex-container {
-     display: flex;
-     flex-direction: column;
-     background-color: DodgerBlue;
+header{
+  background: white;
+  padding: 10px;
+}
 
+header h1{
+  margin:0;
+}
 
-   }
+div.flex-container{
+  background: white;
+  margin-top: 10px;
+}
+div.flex-container img{
+  width: 100%;
+}
+div.flex-container .TituloFoto div:first-child{
+  display:inline-block;
+  width: 80%;
+}
+div.flex-container .TituloFoto div:last-child{
+  display:inline-block;
+  width: 20%;
+  margin-top: 10px;
+  text-align: right;
+  color: gray;
+}
 
-   .flex-container > div {
-     background-color: #f1f1f1;
-     width: 100px;
-     margin: 10px;
-     text-align: center;
-     line-height: 75px;
-     font-size: 30px;
-      justify-content: center;
-      align-items: center;
-   }
+div.flex-container h2, div.flex-container p{
+  padding: 10px;
+  margin: 0;
+}
+div.container{
+  width: 600px;
+  margin: auto;
+}
