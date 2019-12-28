@@ -10,18 +10,25 @@ div{
   box-sizing: border-box;
 }
 
-header{
+header, footer{
   background: white;
   padding: 10px;
 }
 
-header h1{
+ footer{
+  background: white;
+  padding: 5px;
+  margin-top:  10px;
+}
+
+header h1,{
   margin:0;
 }
 
 div.flex-container{
   background: white;
   margin-top: 10px;
+
 }
 div.flex-container img{
   width: 100%;
@@ -46,3 +53,15 @@ div.container{
   width: 600px;
   margin: auto;
 }
+
+li:first-child{
+  display:inline-block;
+  width: 45%;
+  text-align: center;
+}
+li:last-child{
+  display:inline-block;
+  width: 45%;
+  text-align: center;
+}
+li{list-style: none;}
