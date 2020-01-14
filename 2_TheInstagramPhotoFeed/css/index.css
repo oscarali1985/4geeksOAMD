@@ -4,8 +4,12 @@
 */
 
 body{background: #BDBDBD;
+  background-image: url(/img/1.jpeg);
   margin:0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 div{
   box-sizing: border-box;
 }
@@ -21,8 +25,9 @@ header, footer{
   margin-top:  10px;
 }
 
-header h1,{
+header h1{
   margin:0;
+  text-align: center;
 }
 
 div.flex-container{
