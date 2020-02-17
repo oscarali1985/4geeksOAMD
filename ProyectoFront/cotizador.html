@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Dosis:400,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Cotizar Proyecto</title>
+  </head>
+  <body onload="calcular()">
+    <header class="site-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                  <h1 class="align-middle text-center text-lg-left">Aprendiendo Bootstrap 4</h1>
+                  <p class="display-2 text-center text-lg-left">Forms</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <h2 class="lecture-title">Calculo de presupuesto</h2>
+
+    <!-- Con container deja bordes de igual manera a la derecha y a la izquierda -->
+    <!-- container-fluid aplica el 100% de la pantalla -->
+    <!-- col-12 col-sm-6 col-md-8 col-lg10" para -->
+
+    <main class="container">  
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-8 col-10">
+                <form action="" id="calcularPrecio">
+                  <fieldset><legend>Pagina web</legend>
+                    <!-- checked = true -->
+                    <p><input value="300" type="radio" name="opWeb" checked = true>Diseño Básico 3 paginas Index, Contacto, Formularios</p>
+                    <p><input value="400" type="radio" name="opWeb">Diseño Medio 4 paginas Index, Contacto, Formularios, </p>
+                    <p><input value="500" type="radio" name="opWeb">Diseño Medio 5 paginas Index, Contacto, Formularios</p>
+                  </fieldset>
+                  <fieldset><legend>Diseño de Imagenes o logos</legend>
+                    <p><input value="0" type="radio" name="opDWeb" >Poseo todas las imagenes y logos(no requiero ajustes)</p>
+                    <p><input value="200" type="radio" name="opDWeb" checked = true >Diseño de hasta 10 imagenes y un logo sencillo</p>
+                    <p><input value="400" type="radio" name="opDWeb">Diseño de hasta 20 imagenes y un logo con mejoras profesionales</p>
+                    <p><input value="800" type="radio" name="opDWeb">Crear imágen Corporativa Incluye logos e imagen en Vector</p>
+                  </fieldset>
+                  <fieldset><legend>Community Manager</legend>
+                    <p><input value="0" type="radio" name="opCM">No deseo el servicio</p>
+                    <p><input value="200" type="radio" name="opCM" checked = true>Dos publicaciones semanal en 3 cuentas por dos meses</p>
+                    <p><input value="600" type="radio" name="opCM">Tres publicaciones semanal en 3 cuentas por dos meses</p>
+                  </fieldset>
+                </form>
+
+                <form action="" id="Descuento">
+                  <fieldset><legend>Mantenimiento</legend>
+                    <p><input value="1" type="radio" name="opD" checked = true >No deseo Mantenimiento</p>
+                    <p><input value="2" type="radio" name="opD">Mantenimiento por 6 meses (Solo Mantenimiento de Web y Community Manager) <span class="Descuento">Ahorras un mes</span></p>
+                    
+                    <p><input value="3" type="radio" name="opD"> Mantenimiento por 12 meses (Solo Mantenimiento de Web y Community Manager) <span class="Descuento"> Ahorras dos meses</span></p>
+                    
+                  </fieldset>
+                </form>
+              </div> <!--  Cierre col -->
+        </div> <!--  Cierre row -->
+        <div>
+          <p class="valor">De acuerdo a lo selecionado su precio final sera de<span id="precioFinal"></span><span>$</span></p>
+          
+        </div>
+        
+    </main><!--  Cierre main -->
+    
+       
+    <!-- Scrip  al final    -->
+    <script src="https://kit.fontawesome.com/2ee2f06f50.js" crossorigin="anonymous"></script>
+    <script src="./js/calculadora.js"></script>
+    <script src="js/jquery.slim.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
